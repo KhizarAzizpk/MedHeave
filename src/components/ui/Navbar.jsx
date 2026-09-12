@@ -3,7 +3,7 @@ import navbarlogo from "../../assets/images/navbarlogo.png";
 
 const Navbar = () => {
   return (
-    <div className="h-[50px] w-[70%] lg:w-[70%] md:w-[85%] sm:w-[90%] w-[94%] mx-auto flex items-center rounded-3xl bg-white justify-between px-4 sm:px-6">
+    <div className="sticky top-0 z-50 h-[50px] w-[70%] lg:w-[70%] md:w-[85%] sm:w-[90%] w-[94%] mx-auto flex items-center rounded-3xl bg-white justify-between px-4 sm:px-6">
 
       {/* Logo */}
       <div>

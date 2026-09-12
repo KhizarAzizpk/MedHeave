@@ -19,13 +19,13 @@ import card6S3 from "../../assets/images/card_6S3.png";
 import card7S3 from "../../assets/images/card_7S3.png";
 import card8S3 from "../../assets/images/card_8S3.png";
 import card9S3 from "../../assets/images/card_9S3.png";
-
 import card1 from "../../assets/images/card_1.png";
 import card2 from "../../assets/images/card_2.png";
 import card3 from "../../assets/images/card_3.png";
 import card4 from "../../assets/images/card_4.png";
 import card5 from "../../assets/images/card_5.png";
 import card6 from "../../assets/images/card_6.png";
+import computer_illustration from "../../assets/images/computer_illustration2.png"
 
 import {
   UserRound,
@@ -37,7 +37,16 @@ import {
   ArrowRight,
   ArrowDown,
   Activity,
+  HeartCrack,
+
+  ArrowUpRight,
+  MapPin,
+  Mail,
+  Phone,
+  HeartPulse,
 } from "lucide-react";
+import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const MainScreen = () => {
   return (
@@ -874,6 +883,304 @@ const MainScreen = () => {
 </div>
 
 </section>
+
+{/* =====================================================
+    ABOUT US SECTION
+====================================================== */}
+
+<section className="relative w-full overflow-hidden bg-[#f4faff] py-20">
+
+  {/* Background glows */}
+  <div className="pointer-events-none absolute inset-0 z-0">
+    <div className="absolute left-[-180px] top-[80px] h-[420px] w-[420px] rounded-full bg-[#dff2ff] blur-[100px]" />
+    <div className="absolute right-[-180px] bottom-[-100px] h-[420px] w-[420px] rounded-full bg-[#e8f5ff] blur-[100px]" />
+  </div>
+
+  <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col items-center gap-12 px-5 sm:px-8 lg:flex-row lg:px-12">
+
+    {/* Left Content */}
+    <div className="w-full lg:w-1/2">
+
+      <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#d9eafa] bg-white px-4 py-2">
+        <div className="flex h-5 w-5 items-center justify-center text-red-500 bfg">
+  <HeartCrack
+    size={20}
+    strokeWidth={2}
+    className="text-red-500"  
+  /> 
+</div>
+        <span className="text-sm font-semibold text-[#168be8]">
+          About Us
+        </span>
+      </div>
+
+      <h2 className="max-w-[560px] text-4xl font-bold leading-tight text-[#092957] sm:text-5xl">
+        Simplifying Healthcare.
+        <br />
+        <span className="text-[#ed174c]">Strengthening</span>{" "}
+        <span className="text-[#168be8]">Practices.</span>
+      </h2>
+
+      <p className="mt-6 max-w-[540px] text-base leading-8 text-[#71839e]">
+        We help healthcare providers simplify their administrative
+        processes, improve revenue performance, and spend more time
+        focusing on patient care.
+      </p>
+
+      <p className="mt-4 max-w-[540px] text-base leading-8 text-[#71839e]">
+        Our technology-driven solutions bring billing, coding, claims,
+        and revenue cycle management together in one seamless workflow.
+      </p>
+
+      <button className="mt-8 flex items-center gap-3 rounded-full bg-[#ed174c] px-5 py-2.5 font-semibold text-white transition hover:bg-[#d91445]">
+        Learn More
+
+        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#ed174c]">
+          <ArrowRight size={17} strokeWidth={2} />
+        </span>
+      </button>
+
+    </div>
+
+    
+    {/* Right Image */}
+<div className="flex w-full justify-center lg:w-1/2 lg:justify-end lg:mr-[-48px]">
+  <img
+    src={computer_illustration}
+    alt="Healthcare management illustration"
+    className="h-auto w-full max-w-[580px] object-contain"
+  />
+</div>
+
+  </div>
+
+</section>
+{/* =====================================================
+    FOOTER SECTION
+====================================================== */}
+
+<footer className="relative overflow-hidden bg-[#f4faff] text-[#0b3b66]">
+
+  {/* Decorative left image */}
+  <img
+    src={leftImage}
+    alt=""
+    className="pointer-events-none absolute bottom-40 right-[-50px]  hidden w-[230px] opacity-80 lg:block"
+  />
+
+  {/* Soft background glow */}
+  <div className="pointer-events-none absolute inset-0 z-0">
+    <div className="absolute left-[-180px] top-[80px] h-[420px] w-[420px] rounded-full bg-[#dff2ff] blur-[100px]" />
+    <div className="absolute right-[-180px] bottom-[-100px] h-[420px] w-[420px] rounded-full bg-[#e8f5ff] blur-[100px]" />
+  </div>
+
+  <div className="relative z-10 mx-auto max-w-[1400px] px-5 py-16 sm:px-8 lg:px-12">
+
+    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
+
+      {/* Brand */}
+      <div className="max-w-[330px]">
+
+        <h2 className="text-3xl font-extrabold tracking-tight">
+          <span className="text-[#ed174c]">Med</span>{" "}
+          <span className="text-[#168be8]">Heave</span>
+        </h2>
+
+        <h4 className="mt-4 text-sm font-semibold uppercase tracking-[3px] text-[#168be8]">
+          Smarter Healthcare. Better Outcomes.
+        </h4>
+
+        <p className="mt-5 text-sm leading-7 text-[#52708c]">
+          Empowering healthcare providers with reliable medical billing,
+          revenue cycle management, and technology-driven solutions that
+          simplify operations and improve financial performance.
+        </p>
+
+        {/* Social Links */}
+        <div className="mt-7 flex items-center gap-3">
+
+          <a
+            href="#"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#c8e2f5] text-[#168be8] transition hover:bg-[#ed174c] hover:text-white"
+          >
+            <FaFacebookF size={16} />
+          </a>
+
+          <a
+            href="#"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#c8e2f5] text-[#168be8] transition hover:bg-[#168be8] hover:text-white"
+          >
+            <FaLinkedinIn size={16} />
+          </a>
+
+          <a
+            href="#"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#c8e2f5] text-[#168be8] transition hover:bg-[#ed174c] hover:text-white"
+          >
+            <FaYoutube size={16} />
+          </a>
+
+          <a
+            href="#"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#c8e2f5] text-[#168be8] transition hover:bg-[#168be8] hover:text-white"
+          >
+            <FaXTwitter size={16} />
+          </a>
+
+        </div>
+      </div>
+
+
+      {/* Quick Links */}
+      <div>
+
+        <div className="mb-6 flex items-center gap-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#168be8] shadow-sm">
+            <ArrowUpRight size={18} />
+          </div>
+
+          <h3 className="text-lg font-bold text-[#0b3b66]">
+            Quick Links
+          </h3>
+        </div>
+
+        <ul className="space-y-4 text-sm text-[#52708c]">
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">Home</a>
+          </li>
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">About Us</a>
+          </li>
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">Our Services</a>
+          </li>
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">Why Choose Us</a>
+          </li>
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      {/* Our Services */}
+      <div>
+
+        <div className="mb-6 flex items-center gap-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#168be8] shadow-sm">
+            <HeartPulse size={18} />
+          </div>
+
+          <h3 className="text-lg font-bold text-[#0b3b66]">
+            Our Services
+          </h3>
+        </div>
+
+        <ul className="space-y-4 text-sm text-[#52708c]">
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">Medical Billing</a>
+          </li>
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">Medical Coding</a>
+          </li>
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">Credentialing</a>
+          </li>
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">Denial Management</a>
+          </li>
+          <li>
+            <a href="#" className="transition hover:text-[#168be8]">
+              Revenue Cycle Management
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      {/* Get In Touch */}
+      <div>
+
+        <div className="mb-6 flex items-center gap-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#168be8] shadow-sm">
+            <Mail size={18} />
+          </div>
+
+          <h3 className="text-lg font-bold text-[#0b3b66]">
+            Get In Touch
+          </h3>
+        </div>
+
+        <p className="text-sm leading-7 text-[#52708c]">
+          Your partner in{" "}
+          <span className="font-semibold text-[#ed174c]">
+            healthcare success.
+          </span>
+        </p>
+
+        <div className="mt-6 space-y-4 text-sm text-[#52708c]">
+
+          <div className="flex items-start gap-3">
+            <MapPin
+              size={17}
+              className="mt-1 shrink-0 text-[#168be8]"
+            />
+            <span>Serving healthcare providers worldwide</span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <Mail
+              size={17}
+              className="shrink-0 text-[#168be8]"
+            />
+            <span>info@medheave.com</span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <Phone
+              size={17}
+              className="shrink-0 text-[#168be8]"
+            />
+            <span>+1 (000) 000-0000</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* Bottom Footer */}
+    <div className="mt-14 border-t border-[#cfe5f5] pt-6">
+
+      <div className="flex flex-col justify-between gap-4 text-xs text-[#6c879f] sm:flex-row">
+
+        <p>
+          © 2026 Med Heave. All rights reserved.
+        </p>
+
+        <div className="flex gap-6">
+          <a href="#" className="transition hover:text-[#168be8]">
+            Privacy Policy
+          </a>
+
+          <a href="#" className="transition hover:text-[#168be8]">
+            Terms & Conditions
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
 
 
 
