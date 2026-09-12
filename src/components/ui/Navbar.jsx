@@ -1,5 +1,5 @@
 import { ChevronDown, ArrowRight, Menu } from "lucide-react";
-import navbarlogo from "../../assets/images/navbarlog.jpeg";
+import navbarlogo from "../../assets/images/navbarlogo.png";
 
 const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar = () => {
         <img
   src={navbarlogo}
   alt="Logo"
-  className="h-10 w-auto object-contain rounded-3xl "
+  className="h-20 w-20 object-contain "
 />
       </div>
 
