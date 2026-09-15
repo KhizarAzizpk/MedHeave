@@ -50,7 +50,12 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const MainScreen = () => {
   return (
-    <div className="relative overflow-hidden pt-4">
+    <div className="relative  pt-4">
+       {/* Navbar */}
+      <div className="sticky top-0 z-50 pt-4">
+        <Navbar />
+      </div>  
+      
 
       {/* =====================================================
           HERO SECTION
@@ -62,11 +67,9 @@ const MainScreen = () => {
         alt=""
         className="absolute inset-0 w-full h-full object-fill z-0"
       />
+      
 
-      {/* Navbar */}
-      <div className="relative z-10">
-        <Navbar />
-      </div>
+     
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col lg:flex-row items-center max-w-7xl mx-auto px-6 lg:px-8 py-10 lg:py-16">
@@ -176,6 +179,9 @@ const MainScreen = () => {
         </div>
 
       </div>
+
+
+      
 
 
       {/* =====================================================
@@ -315,6 +321,80 @@ const MainScreen = () => {
 
       </section>
       {/* =====================================================
+
+
+{/* =====================================================
+    ABOUT US SECTION
+====================================================== */}
+
+<section className="relative w-full overflow-hidden bg-[#f4faff] py-20">
+
+  {/* Background glows */}
+  <div className="pointer-events-none absolute inset-0 z-0">
+    <div className="absolute left-[-180px] top-[80px] h-[420px] w-[420px] rounded-full bg-[#dff2ff] blur-[100px]" />
+    <div className="absolute right-[-180px] bottom-[-100px] h-[420px] w-[420px] rounded-full bg-[#e8f5ff] blur-[100px]" />
+  </div>
+
+  <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col items-center gap-12 px-5 sm:px-8 lg:flex-row lg:px-12">
+
+    {/* Left Content */}
+    <div className="w-full lg:w-1/2">
+
+      <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#d9eafa] bg-white px-4 py-2">
+        <div className="flex h-5 w-5 items-center justify-center text-red-500 bfg">
+  <HeartCrack
+    size={20}
+    strokeWidth={2}
+    className="text-red-500"  
+  /> 
+</div>
+        <span className="text-sm font-semibold text-[#168be8]">
+          About Us
+        </span>
+      </div>
+
+      <h2 className="max-w-[560px] text-4xl font-bold leading-tight text-[#092957] sm:text-5xl">
+        Simplifying Healthcare.
+        <br />
+        <span className="text-[#ed174c]">Strengthening</span>{" "}
+        <span className="text-[#168be8]">Practices.</span>
+      </h2>
+
+      <p className="mt-6 max-w-[540px] text-base leading-8 text-[#71839e]">
+        We help healthcare providers simplify their administrative
+        processes, improve revenue performance, and spend more time
+        focusing on patient care.
+      </p>
+
+      <p className="mt-4 max-w-[540px] text-base leading-8 text-[#71839e]">
+        Our technology-driven solutions bring billing, coding, claims,
+        and revenue cycle management together in one seamless workflow.
+      </p>
+
+      <button className="mt-8 flex items-center gap-3 rounded-full bg-[#ed174c] px-5 py-2.5 font-semibold text-white transition hover:bg-[#d91445]">
+        Learn More
+
+        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#ed174c]">
+          <ArrowRight size={17} strokeWidth={2} />
+        </span>
+      </button>
+
+    </div>
+
+    
+    {/* Right Image */}
+<div className="flex w-full justify-center lg:w-1/2 lg:justify-end lg:mr-[-48px]">
+  <img
+    src={computer_illustration}
+    alt="Healthcare management illustration"
+    className="h-auto w-full max-w-[580px] object-contain"
+  />
+</div>
+
+  </div>
+
+</section>
+
 
 {/* =====================================================
     MEDICAL BILLING SERVICES SECTION
@@ -884,77 +964,8 @@ const MainScreen = () => {
 
 </section>
 
-{/* =====================================================
-    ABOUT US SECTION
-====================================================== */}
 
-<section className="relative w-full overflow-hidden bg-[#f4faff] py-20">
 
-  {/* Background glows */}
-  <div className="pointer-events-none absolute inset-0 z-0">
-    <div className="absolute left-[-180px] top-[80px] h-[420px] w-[420px] rounded-full bg-[#dff2ff] blur-[100px]" />
-    <div className="absolute right-[-180px] bottom-[-100px] h-[420px] w-[420px] rounded-full bg-[#e8f5ff] blur-[100px]" />
-  </div>
-
-  <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col items-center gap-12 px-5 sm:px-8 lg:flex-row lg:px-12">
-
-    {/* Left Content */}
-    <div className="w-full lg:w-1/2">
-
-      <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#d9eafa] bg-white px-4 py-2">
-        <div className="flex h-5 w-5 items-center justify-center text-red-500 bfg">
-  <HeartCrack
-    size={20}
-    strokeWidth={2}
-    className="text-red-500"  
-  /> 
-</div>
-        <span className="text-sm font-semibold text-[#168be8]">
-          About Us
-        </span>
-      </div>
-
-      <h2 className="max-w-[560px] text-4xl font-bold leading-tight text-[#092957] sm:text-5xl">
-        Simplifying Healthcare.
-        <br />
-        <span className="text-[#ed174c]">Strengthening</span>{" "}
-        <span className="text-[#168be8]">Practices.</span>
-      </h2>
-
-      <p className="mt-6 max-w-[540px] text-base leading-8 text-[#71839e]">
-        We help healthcare providers simplify their administrative
-        processes, improve revenue performance, and spend more time
-        focusing on patient care.
-      </p>
-
-      <p className="mt-4 max-w-[540px] text-base leading-8 text-[#71839e]">
-        Our technology-driven solutions bring billing, coding, claims,
-        and revenue cycle management together in one seamless workflow.
-      </p>
-
-      <button className="mt-8 flex items-center gap-3 rounded-full bg-[#ed174c] px-5 py-2.5 font-semibold text-white transition hover:bg-[#d91445]">
-        Learn More
-
-        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#ed174c]">
-          <ArrowRight size={17} strokeWidth={2} />
-        </span>
-      </button>
-
-    </div>
-
-    
-    {/* Right Image */}
-<div className="flex w-full justify-center lg:w-1/2 lg:justify-end lg:mr-[-48px]">
-  <img
-    src={computer_illustration}
-    alt="Healthcare management illustration"
-    className="h-auto w-full max-w-[580px] object-contain"
-  />
-</div>
-
-  </div>
-
-</section>
 {/* =====================================================
     FOOTER SECTION
 ====================================================== */}
