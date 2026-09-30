@@ -76,7 +76,7 @@ const Navbar = () => {
       left-1/2
       -translate-x-1/2
       top-full
-      pt-4
+      p-2
       hidden
       group-hover:block
       z-50
@@ -423,7 +423,7 @@ const Navbar = () => {
       left-1/2
       -translate-x-1/2
       top-full
-      pt-4
+      pt-2
       hidden
       group-hover:block
       z-50
@@ -800,7 +800,7 @@ const Navbar = () => {
       left-1/2
       -translate-x-1/2
       top-full
-      pt-4
+      pt-2
       hidden
       group-hover:block
       z-50
@@ -844,7 +844,7 @@ const Navbar = () => {
           flex
           items-center
           gap-4
-          p-4
+          p-2
           rounded-xl
           bg-blue-50
           hover:bg-blue-100
@@ -1075,7 +1075,7 @@ const Navbar = () => {
       left-1/2
       -translate-x-1/2
       top-full
-      pt-4
+      pt-2
       hidden
       group-hover:block
       z-50
@@ -1444,7 +1444,7 @@ const Navbar = () => {
       left-1/2
       -translate-x-1/2
       top-full
-      pt-4
+      pt-2
       hidden
       group-hover:block
       z-50
@@ -1719,7 +1719,7 @@ const Navbar = () => {
   {/* Contact */}
   <a
     href="#contact"
-    className="flex items-center gap-1 whitespace-nowrap"
+    className=" flex items-center gap-1 whitespace-nowrap"
   >
     Contact
     <ChevronDown size={16} strokeWidth={2.5} />
@@ -1733,7 +1733,7 @@ const Navbar = () => {
       left-1/2
       -translate-x-1/2
       top-full
-      pt-4
+      pt-2
       hidden
       group-hover:block
       z-50
@@ -1748,7 +1748,7 @@ const Navbar = () => {
         border-gray-100
         rounded-2xl
         shadow-2xl
-        p-4
+        p-2
       "
     >
 
@@ -1827,8 +1827,9 @@ const Navbar = () => {
         <button
   className="
     hidden lg:flex
-    bg-red-500 hover:bg-red-600
-    rounded-full
+    bg-red-500
+     hover:bg-red-600
+     rounded-full
     text-white
     px-2 sm:px-3
     py-1.5
