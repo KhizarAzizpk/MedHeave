@@ -1,4 +1,5 @@
 import { ChevronDown, ArrowRight, Menu } from "lucide-react";
+import {Link} from "react-router-dom";
 import navbarlogo from "../../assets/images/navbarlogo.png";
 import {
  
@@ -60,13 +61,13 @@ const Navbar = () => {
    <div className="relative group">
 
   {/* Services */}
-  <a
-    href="#services"
+  <Link
+    to="/services"
     className="flex items-center gap-1 whitespace-nowrap"
   >
     Services
     <ChevronDown size={16} strokeWidth={2.5} />
-  </a>
+  </Link>
 
 
   {/* Services Mega Menu */}
@@ -138,7 +139,9 @@ const Navbar = () => {
 
 
         {/* 1. Revenue Cycle Management */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        
+        <Link   to="/services/revenue-cycle-management"
+         className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <Activity size={20} className="text-blue-900" />
@@ -154,11 +157,12 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 2. Medical Billing Services */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link  to = "/service/MedicalBilling"
+         className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <FileText size={20} className="text-blue-900" />
@@ -174,11 +178,12 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 3. Medical Coding */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link  to = "/services/MedicalCoding"
+         className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <ClipboardCheck size={20} className="text-blue-900" />
@@ -194,11 +199,12 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 4. Credentialing Services */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link  to="/services/credentialing"
+         className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <ShieldCheck size={20} className="text-blue-900" />
@@ -214,11 +220,13 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 5. Provider Enrollment */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link 
+          to ="/services/ProviderEnrollment"
+          className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <UserCheck size={20} className="text-blue-900" />
@@ -234,11 +242,13 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 6. Eligibility Verification */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link
+        to ="/services/eligibility-verification"
+         className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <BadgeCheck size={20} className="text-blue-900" />
@@ -254,11 +264,13 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 7. Prior Authorization */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link
+        to="/services/prior-authorization"
+         className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <Clock size={20} className="text-blue-900" />
@@ -274,11 +286,13 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 8. Claims Management */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link
+         to ="/services/claims-management"
+        className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <FileCheck size={20} className="text-blue-900" />
@@ -294,11 +308,13 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 9. Payment Posting */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link
+        to="/services/payment-posting"
+        className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <CreditCard size={20} className="text-blue-900" />
@@ -314,11 +330,13 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 10. AR Recovery */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link
+         to="/services/ar-recovery"
+         className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <TrendingUp size={20} className="text-blue-900" />
@@ -334,11 +352,13 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 11. Denial Management */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link
+        to="/services/denial-management"
+         className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <AlertCircle size={20} className="text-blue-900" />
@@ -354,11 +374,13 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
         {/* 12. Accounts Receivable Follow-up */}
-        <div className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
+        <Link 
+        to="/services/accounts-receivable-follow-up"
+        className="flex gap-3 p-3 rounded-xl hover:bg-blue-50 transition">
 
           <div className="h-10 w-10 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center">
             <BarChart3 size={20} className="text-blue-900" />
@@ -374,7 +396,7 @@ const Navbar = () => {
             </p>
           </div>
 
-        </div>
+        </Link>
 
 
       </div>
