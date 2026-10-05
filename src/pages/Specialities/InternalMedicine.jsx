@@ -11,8 +11,8 @@ import {
   WalletCards,
 } from "lucide-react";
 
-import Navbar from "../../components/ui/navbar";
-import Footer from "../../components/ui/footer";
+import Navbar from "../../components/ui/Navbar";
+import Footer from "../../components/ui/Footer";
 
 const InternalMedicine = () => {
   return (
